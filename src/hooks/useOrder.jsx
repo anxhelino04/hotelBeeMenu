@@ -54,7 +54,7 @@ function orderReducer(state, action) {
       return { ...state, ordernote: action.payload };
 
     case "CLEAR_ORDER":
-      return { ...initialState, id: Date.now() };
+      return { ...initialState, id: 0 };
 
     default:
       return state;

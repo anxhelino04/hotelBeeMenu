@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Dialog,
   DialogTitle,
@@ -27,7 +26,6 @@ const OrderJsonModal = ({ open, onClose, jsonData }) => {
           fullWidth
           minRows={10}
           value={jsonString}
-          InputProps={{ readOnly: true }}
           sx={{ outline: "none" }}
         />
       </DialogContent>

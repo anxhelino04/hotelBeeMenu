@@ -26,8 +26,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       color="default"
       elevation={0}
       sx={{
-        bgcolor: theme.palette.background.paper,
-        borderBottom: `1px solid ${theme.palette.main.primary}`,
+        bgcolor: theme.palette.main.primary,
+        borderBottom: `1px solid ${theme.palette.border.main}`,
       }}>
       <Container sx={{ py: 1 }}>
         <Toolbar
@@ -38,16 +38,14 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             px: 0,
           }}>
           <Box display="flex" alignItems="center">
-            <RestaurantMenu
-              sx={{ color: theme.palette.main.primary, fontSize: 28 }}
-            />
+            <RestaurantMenu sx={{ color: "#ffffff", fontSize: 28 }} />
             <Typography
               variant="h5"
               sx={{
                 ml: 1,
                 fontWeight: 700,
                 display: { xs: "none", sm: "block" },
-                color: theme.palette.main.primary,
+                color: "#ffffff",
               }}>
               Hotel Bee
             </Typography>
@@ -67,9 +65,6 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 background: theme.palette.background.main,
                 border: `1px solid ${theme.palette.main.primary}`,
                 boxShadow: "none",
-                "&:hover": {
-                  background: theme.palette.action.hover,
-                },
               }}>
               <IconButton sx={{ color: theme.palette.main.secondary }}>
                 <Search />

@@ -211,11 +211,13 @@ const OrderCard = () => {
         </Button>
       </Box>
       <RecommendedProducts orderItems={orderItems} addProduct={addProduct} />
-      <OrderJsonModal
-        open={openJSONModal}
-        onClose={() => setOpenJSONModal(false)}
-        jsonData={jsonData}
-      />
+      {openJSONModal && (
+        <OrderJsonModal
+          open={openJSONModal}
+          onClose={() => setOpenJSONModal(false)}
+          jsonData={jsonData}
+        />
+      )}
     </Card>
   );
 };

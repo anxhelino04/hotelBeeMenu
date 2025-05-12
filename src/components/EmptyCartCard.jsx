@@ -16,6 +16,7 @@ const EmptyCartCard = () => {
         textAlign: "center",
         flex: 2,
         minHeight: 500,
+        mb: 4,
       }}>
       <Typography
         variant="h6"

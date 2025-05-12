@@ -4,7 +4,7 @@ const getAppTheme = (darkMode) => {
   const primaryColor = "#FF5722";
   const lightText = "#ffffff";
   const darkText = "#121212";
-  const lightPaper = "#fbfbfb";
+  const lightPaper = "#fafafa	";
   const darkPaper = "#1e1e1e";
   const lightMain = "#ffffff";
   const darkMain = "#121212";
