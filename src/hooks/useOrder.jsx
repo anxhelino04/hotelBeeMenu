@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useContext, useState } from "react";
+import { createContext, useReducer, useContext, useState } from "react";
 
 const OrderContext = createContext();
 
@@ -11,7 +11,6 @@ const initialState = {
 function orderReducer(state, action) {
   switch (action.type) {
     case "ADD_PRODUCT": {
-      console.log("Adding product:", action.payload);
       const exists = state.products.find((p) => p.id === action.payload.id);
       let updatedProducts;
 

@@ -1,12 +1,9 @@
-import React from "react";
 import { Container, Typography, Box } from "@mui/material";
 import Navbar from "../components/Navbar";
 import OrderCard from "../components/OrderCard";
 import ProductList from "../components/ProductList";
 
 const Home = ({ darkMode, toggleDarkMode }) => {
-  console.log("Home rendered");
-
   return (
     <>
       <Navbar toggleDarkMode={toggleDarkMode} />

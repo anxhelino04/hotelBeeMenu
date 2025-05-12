@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import {
   AppBar,
@@ -21,7 +20,6 @@ import { useOrder } from "../hooks/useOrder";
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const { setSearchQuery } = useOrder();
   const theme = useTheme();
-  console.log("Navbar rendered");
   return (
     <AppBar
       position="static"

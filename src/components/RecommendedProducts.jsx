@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Typography, Card, CardContent } from "@mui/material";
 import products from "../data/products.json";
 import { useTheme } from "@mui/material/styles";

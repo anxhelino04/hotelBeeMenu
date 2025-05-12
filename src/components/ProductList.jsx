@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useOrder } from "../hooks/useOrder";
 import { productCardStyle } from "../styles/sharedStyles";
 import {
@@ -18,7 +18,6 @@ const ProductList = () => {
       product.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }, [products, searchQuery]);
-  console.log("ProductList rendered");
   const { addProduct } = useOrder();
 
   const theme = useTheme();

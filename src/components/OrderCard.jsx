@@ -28,7 +28,6 @@ const OrderCard = () => {
     setOrderNote,
     clearOrder,
   } = useOrder();
-  console.log("OrderCard rendered", order);
   const orderItems = order.products;
   const totalAmount = orderItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
