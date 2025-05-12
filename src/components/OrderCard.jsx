@@ -124,7 +124,6 @@ const OrderCard = () => {
                 <TextField
                   fullWidth
                   placeholder="Add note (optional)"
-                  //   variant="outlined"
                   size="small"
                   onChange={(e) => updateNote(item.id, e.target.value)}
                 />
@@ -148,7 +147,6 @@ const OrderCard = () => {
             fullWidth
             multiline
             rows={2}
-            variant="outlined"
             placeholder="Add note (optional)"
             onChange={(e) => setOrderNote(e.target.value)}
           />
