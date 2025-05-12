@@ -41,6 +41,17 @@ function App() {
             color: "#FF5722",
           },
         },
+        components: {
+          MuiOutlinedInput: {
+            styleOverrides: {
+              root: {
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#FF5722",
+                },
+              },
+            },
+          },
+        },
       }),
     [darkMode]
   );

@@ -28,13 +28,16 @@ const OrderJsonModal = ({ open, onClose, jsonData }) => {
           minRows={10}
           value={jsonString}
           InputProps={{ readOnly: true }}
+          sx={{ outline: "none" }}
         />
       </DialogContent>
       <DialogActions>
-        <Button color="theme.palette.main.primary" onClick={handleCopy}>
+        <Button sx={{ color: theme.palette.main.primary }} onClick={handleCopy}>
           Copy JSON
         </Button>
-        <Button onClick={onClose}>Close</Button>
+        <Button sx={{ color: theme.palette.main.primary }} onClick={onClose}>
+          Close
+        </Button>
       </DialogActions>
     </Dialog>
   );
